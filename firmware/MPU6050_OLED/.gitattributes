@@ -1,0 +1,4 @@
+# 统一换行符：仓库内一律存 LF。
+# Windows 上 Git 默认 autocrlf=true 会把文件在检出时改成 CRLF，
+# 那会让"整文件都变了"的假 diff 污染代码审查，这里显式固定为 LF。
+* text=auto eol=lf

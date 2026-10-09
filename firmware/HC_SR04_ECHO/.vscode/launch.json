@@ -1,0 +1,27 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "STM32F103 DAP Mini pyOCD",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "pyocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "${workspaceFolder}/build/HC_SR04_ECHO.elf",
+      "targetId": "stm32f103c8",
+      "interface": "swd",
+      "serverpath": "C:/Users/xuhengyi/AppData/Local/Programs/Python/Python312/Scripts/pyocd.exe",
+      "overrideGDBServerStartedRegex": "GDB server listening on port",
+      "serverArgs": [
+        "--uid",
+        "0001A0000000",
+        "-O",
+        "dap_protocol=swd"
+      ],
+      "armToolchainPath": "C:/Users/xuhengyi/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin",
+      "gdbPath": "C:/Users/xuhengyi/AppData/Local/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gdb.exe",
+      "runToEntryPoint": "main",
+      "preLaunchTask": "Build HC_SR04_ECHO"
+    }
+  ]
+}

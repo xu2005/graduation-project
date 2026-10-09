@@ -1,0 +1,8 @@
+# CMake 构建目录（CMakePresets.json 里的 binaryDir）
+build/
+
+# 万一在别处手动构建产生的产物
+*.elf
+*.bin
+*.hex
+*.map
